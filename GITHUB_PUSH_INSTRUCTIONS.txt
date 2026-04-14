@@ -1,0 +1,239 @@
+================================================================================
+PUSH TO GITHUB - STEP BY STEP INSTRUCTIONS
+================================================================================
+
+Repository: https://github.com/KOVVURIPCDURGAREDDY/Major-Project.git
+
+================================================================================
+OPTION 1: Using Git Command Line (Recommended)
+================================================================================
+
+1. Install Git (if not installed):
+   Download from: https://git-scm.com/download/win
+   
+2. Open Git Bash or Command Prompt in project folder:
+   cd "c:\Users\durga\OneDrive\Desktop\Major Project"
+
+3. Initialize repository:
+   git init
+
+4. Add all files:
+   git add .
+
+5. Create .gitignore file (to exclude unnecessary files):
+   Create a file named .gitignore with this content:
+   
+   __pycache__/
+   *.pyc
+   *.pyo
+   *.pyd
+   .Python
+   *.so
+   *.egg
+   *.egg-info/
+   dist/
+   build/
+   .venv/
+   venv/
+   ENV/
+   .DS_Store
+   .idea/
+   .vscode/
+   *.log
+   server_test.log
+
+6. Commit files:
+   git commit -m "Initial commit: Federated Learning Keyboard with Attention-GRU"
+
+7. Add remote repository:
+   git remote add origin https://github.com/KOVVURIPCDURGAREDDY/Major-Project.git
+
+8. Push to GitHub:
+   git branch -M main
+   git push -u origin main
+
+================================================================================
+OPTION 2: Using GitHub Desktop (Easiest)
+================================================================================
+
+1. Download GitHub Desktop:
+   https://desktop.github.com/
+
+2. Install and sign in with your GitHub account
+
+3. Click "Add" → "Add Existing Repository"
+
+4. Browse to: c:\Users\durga\OneDrive\Desktop\Major Project
+
+5. Click "Publish repository"
+
+6. Enter repository name: Major-Project
+
+7. Uncheck "Keep this code private" (if you want it public)
+
+8. Click "Publish repository"
+
+================================================================================
+OPTION 3: Using GitHub Web Interface
+================================================================================
+
+1. Go to: https://github.com/KOVVURIPCDURGAREDDY/Major-Project
+
+2. Click "uploading an existing file"
+
+3. Drag and drop all project files (or click to browse)
+
+4. Add commit message: "Initial commit: Federated Learning Keyboard"
+
+5. Click "Commit changes"
+
+Note: This method is slower for many files
+
+================================================================================
+OPTION 4: Using VS Code (If you have VS Code)
+================================================================================
+
+1. Open VS Code
+
+2. Open folder: c:\Users\durga\OneDrive\Desktop\Major Project
+
+3. Click Source Control icon (left sidebar)
+
+4. Click "Initialize Repository"
+
+5. Stage all changes (click + next to "Changes")
+
+6. Enter commit message: "Initial commit: Federated Learning Keyboard"
+
+7. Click checkmark to commit
+
+8. Click "..." → "Remote" → "Add Remote"
+
+9. Enter URL: https://github.com/KOVVURIPCDURGAREDDY/Major-Project.git
+
+10. Click "..." → "Push"
+
+================================================================================
+RECOMMENDED .gitignore CONTENT
+================================================================================
+
+Create a file named .gitignore in the project root with:
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+server_test.log
+
+# Model files (optional - if too large)
+# *.keras
+# *.tflite
+
+# Test files (optional)
+test_*.py
+
+================================================================================
+WHAT TO INCLUDE IN REPOSITORY
+================================================================================
+
+Essential Files:
+✓ app.py
+✓ requirements.txt
+✓ README.md (the original one)
+✓ backend/ (all Python modules)
+✓ frontend/ (HTML, CSS, JavaScript)
+✓ gru_federated_keyboard.keras (model file)
+
+Optional Files (can exclude if too large):
+- Test files (test_*.py)
+- Log files (*.log)
+- Verification reports (*.txt)
+
+================================================================================
+AFTER PUSHING
+================================================================================
+
+1. Verify on GitHub:
+   Visit: https://github.com/KOVVURIPCDURGAREDDY/Major-Project
+   
+2. Check all files are uploaded
+
+3. Update README.md on GitHub if needed
+
+4. Add topics/tags:
+   - federated-learning
+   - machine-learning
+   - privacy
+   - next-word-prediction
+   - attention-mechanism
+   - differential-privacy
+
+5. Add description:
+   "Privacy-first next-word prediction using Federated Learning with 
+   Attention-GRU, FedProx+FedNova, DP-SGD, and Trigram re-ranking"
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If you get "repository already exists":
+  git remote set-url origin https://github.com/KOVVURIPCDURGAREDDY/Major-Project.git
+
+If you get authentication error:
+  Use GitHub Personal Access Token instead of password
+  Generate at: https://github.com/settings/tokens
+
+If files are too large:
+  GitHub has 100MB file limit
+  Use Git LFS for large files or exclude them
+
+================================================================================
+QUICK COMMAND SUMMARY (Once Git is Installed)
+================================================================================
+
+cd "c:\Users\durga\OneDrive\Desktop\Major Project"
+git init
+git add .
+git commit -m "Initial commit: Federated Learning Keyboard"
+git remote add origin https://github.com/KOVVURIPCDURGAREDDY/Major-Project.git
+git branch -M main
+git push -u origin main
+
+================================================================================
